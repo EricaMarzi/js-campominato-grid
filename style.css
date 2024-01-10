@@ -30,14 +30,26 @@ header {
 
 /*? MAIN */
 
-.grid {
-    width: 1000px;
-    margin: 0 auto;
-    
-    background-color: black;
-    height: 100px;
+main {
+    height: calc(100vh - 130px);
+    display: flex;
+    align-items: center;
 }
 
+#grid {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    border: 2px solid white;
+    width: 50px;
+    height: 50px;
+}
 
 
 
