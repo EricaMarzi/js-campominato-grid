@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7fffd4;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*? HEADER */
+
+header {
+    background-color: white;
+    height: 80px;
+    padding: 0 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.header-left {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+/*? MAIN */
+
+.grid {
+    width: 1000px;
+    margin: 0 auto;
+    
+    background-color: black;
+    height: 100px;
+}
+
+
+
+
+/*? FOOTER */
+
+footer {
+    background-color: white;
+    height: 50px;
+    padding: 0 10px;
+
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
