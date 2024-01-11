@@ -1,4 +1,4 @@
-const grid = document.getElementById("grid")
+let grid = document.getElementById("grid")
 const form = document.querySelector("form")
 
 
@@ -9,7 +9,6 @@ const totalCells = rows * cols;
 
 const createNewCell = (num) => {
     const newCell = document.createElement("div")
-    //newCell.classList.add("cell")
     newCell.classList.add("cell")
     newCell.innerText = num
     return newCell
@@ -18,7 +17,7 @@ const createNewCell = (num) => {
 
 form.addEventListener ("submit", function(event) {
     event.preventDefault()
-    
+    grid.innerHTML = ""
  
     for(let i = 1; i <= totalCells; i++ ) {
         const cell = createNewCell(i)
